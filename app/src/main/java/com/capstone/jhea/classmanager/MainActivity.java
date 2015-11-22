@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_student) {
             fm.beginTransaction().replace(R.id.content_frame, new FragmentStudent()).commit();
         } else if (id == R.id.nav_account){
-
+            fm.beginTransaction().replace(R.id.content_frame, new FragmentAccount()).commit();
         } else if (id == R.id.nav_logout) {
 
             AlertDialog.Builder alert = new AlertDialog.Builder(new ContextThemeWrapper(this, android.R.style.Theme_Black));

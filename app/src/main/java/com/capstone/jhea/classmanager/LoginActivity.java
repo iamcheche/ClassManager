@@ -55,7 +55,7 @@ public class LoginActivity extends Activity implements OnClickListener {
                 // check if the Stored password matches with  Password entered by user
                 if(password.equals(storedPassword))
                 {
-                    Toast.makeText(LoginActivity.this, "Congrats: Login Successful", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this, "Login Successful.", Toast.LENGTH_LONG).show();
                     Intent intentLogin=new Intent(getApplicationContext(),MainActivity.class);
                     startActivity(intentLogin);
                     finish();
