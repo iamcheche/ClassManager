@@ -2,20 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
+
         <item
             android:id="@+id/nav_schedule"
+            android:icon="@drawable/schedule"
             android:title="My Schedule" />
 
         <item
             android:id="@+id/nav_class"
+            android:icon="@drawable/mclass"
             android:title="Manage Class" />
 
         <item
             android:id="@+id/nav_grades"
+            android:icon="@drawable/grade"
             android:title="Compute Grades" />
 
         <item
             android:id="@+id/nav_student"
+            android:icon="@drawable/student"
             android:title="Students Profile" />
 
     </group>
@@ -24,10 +29,12 @@
         <menu>
             <item
                 android:id="@+id/nav_account"
+                android:icon="@drawable/settings"
                 android:title="Account Settings" />
 
             <item
                 android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
                 android:title="Log Out" />
         </menu>
     </item>
