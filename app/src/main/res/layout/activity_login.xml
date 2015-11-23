@@ -1,3 +1,4 @@
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,73 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.capstone.tabletclassmanager.LoginActivity" >
 
-
-
-    <EditText
-        android:id="@+id/etUsername"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ivlogo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
-        android:ems="10" >
-        <requestFocus />
-    </EditText>
-
-    <TextView
-        android:id="@+id/tvUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/etUsername"
-        android:layout_centerHorizontal="true"
-        android:textColor="#191919"
-        android:text="Username"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/etUsername"
-        android:layout_below="@+id/tvUsername"
-        android:layout_marginTop="14dp"
-        android:ems="10"
-        android:inputType="textPassword" />
-
-
-    <TextView
-        android:id="@+id/tvPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tvUsername"
-        android:layout_below="@+id/etPassword"
-        android:text="Password"
-        android:textColor="#191919"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvPassword"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:text="Login"
-        android:background="#191919"
-        android:textColor="#e5e5ff" />
-
-    <Button
-        android:id="@+id/btnSignUp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnLogin"
-        android:layout_below="@+id/btnLogin"
-        android:layout_marginTop="17dp"
-        android:text="Create Account"
-        android:textColor="#e5e5ff"
-        android:background="#191919"
-        android:clickable="false" />
-
     <ImageView
         android:id="@+id/ivlogo"
         android:layout_width="150dp"
@@ -83,5 +17,89 @@
         android:src="@drawable/logo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ivlogo"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivlogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:ems="10" >
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUsername"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#191919"
+            android:text="Username"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etUsername"
+            android:layout_below="@+id/tvUsername"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvUsername"
+            android:layout_below="@+id/etPassword"
+            android:text="Password"
+            android:gravity="center"
+            android:textColor="#191919"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Login"
+            android:background="#191919"
+            android:textColor="#e5e5ff" />
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnLogin"
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginTop="17dp"
+            android:text="Create Account"
+            android:textColor="#e5e5ff"
+            android:background="#191919"
+            android:clickable="false" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
 
 </RelativeLayout>
